@@ -1,0 +1,15 @@
+/* ఇది మీ పాఠం పేజీని అందంగా చూపిస్తుంది */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto; /* పేజీ మధ్యలోకి వస్తుంది */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+code {
+    background-color: #333;
+    color: #00ffcc;
+    padding: 2px 5px;
+    font-family: monospace;
+}
