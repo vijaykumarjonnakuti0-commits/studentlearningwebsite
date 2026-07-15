@@ -1,72 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>DBMS Course</title>
-<link rel="stylesheet" href="style.css">
-  
-body{
-background:#0f172a;
-color:white;
-font-family:Arial;
-padding:20px;
-}
-h1{color:#00ffcc;}
-table {
-width: 100%;
-border-collapse: collapse;
-margin: 20px 0;
-background: #1e293b;
-}
-th, td {
-border: 1px solid #475569;
-padding: 10px;
-text-align: left;
-}
-th {
-background-color: #00ffcc;
-color: #0f172a;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="dbms-course.html">Home</a>
+    </nav>
 
-<h1>DBMS Course</h1>
+    <h1>DBMS Course</h1>
+    
+    <h3>వీడియో క్లాస్:</h3>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
 
-<p>DBMS (Database Management System) అంటే వెబ్‌సైట్ లేదా యాప్‌కి సంబంధించిన డేటాను (సమాచారాన్ని) భద్రంగా దాచడానికి మరియు మేనేజ్ చేయడానికి ఉపయోగించే ఒక సాఫ్ట్‌వేర్.</p>
-
-<h2>Example (ఉదాహరణ)</h2>
-<p>డేటాబేస్‌లో సమాచారం ఎప్పుడూ ఇలా టేబుల్స్ (రోస్ మరియు కాలమ్స్) రూపంలో దాచబడుతుంది:</p>
-
-<table>
-  <tr>
-    <th>Student ID</th>
-    <th>Name</th>
-    <th>Course</th>
-  </tr>
-  <tr>
-    <td>101</td>
-    <td>Ravi</td>
-    <td>HTML</td>
-  </tr>
-  <tr>
-    <td>102</td>
-    <td>Kumar</td>
-    <td>CSS</td>
-  </tr>
-</table>
-
-<br><br>
-<a href="dbms-courses.html" style="color:#00ffcc; text-decoration:none;">⬅ Back to Courses</a>
-  <!-- క్విజ్ సెక్షన్ -->
     <h3>క్విజ్:</h3>
-  <iframe width="100%" height="315" src="https://youtube.com/watch?v=q1unQgP7uaQ&si=qwLghr7ZSg9oLoZh"frameborder="0" allowfullscreen></iframe>
     <div class="quiz-box">
-        <p><b>ప్రశ్న 1:</b> HTML అంటే ఏమిటి?</p>
+        <p><b>ప్రశ్న:</b> మీ ప్రశ్న ఇక్కడ రాయండి?</p>
         <button class="ans-btn" onclick="toggleAnswer('ans1')">సమాధానం చూడండి</button>
-        <p id="ans1" class="ans-text">సమాధానం: HyperText Markup Language</p>
+        <p id="ans1" class="ans-text">సమాధానం ఇక్కడ రాయండి.</p>
     </div>
-  
 
+    <script src="script.js"></script>
 </body>
 </html>
- 
