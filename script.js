@@ -1,8 +1,8 @@
 function toggleAnswer(id) {
     var x = document.getElementById(id);
-    if (x.style.display === "none" || x.style.display === "") {
-        x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
         x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 }
