@@ -15,9 +15,10 @@ code {
 }
 button {
     background-color: #00ffcc;
+    color: #0f172a;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
 }
