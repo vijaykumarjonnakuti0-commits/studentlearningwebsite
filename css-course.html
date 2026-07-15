@@ -5,24 +5,23 @@
 </head>
 <body>
     <nav>
-        <a href="css.course.html">Home</a>
+        <a href="index.html">Home</a>
     </nav>
 
     <h1>CSS Course</h1>
     
-    <!-- వీడియో లింక్ మార్చబడింది -->
-    <iframe width="100%" height="315" src="https://youtube.com/watch?v=Oi9QvyK8zvk&si=fxAsj5pf1GMuyEcv" frameborder="0" allowfullscreen></iframe>
+    <h3>వీడియో క్లాస్:</h3>
+    <!-- YouTube వీడియో లింక్ ఇక్కడ ఉంది -->
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Oi9QvyK8zvk" frameborder="0" allowfullscreen></iframe>
 
-     ans1" class="ans-text">సమాధానం: Cascading Style Sheets</p>
-    </div>
-
-        <!-- ఇతర కంటెంట్ అంతా ఇక్కడ ఉండాలి -->
+    <h3>క్విజ్:</h3>
     <div class="quiz-box">
-        ...
+        <p><b>ప్రశ్న:</b> CSS అంటే ఏమిటి?</p>
+        <button class="ans-btn" onclick="toggleAnswer('ans1')">సమాధానం చూడండి</button>
+        <p id="ans1" class="ans-text">సమాధానం: Cascading Style Sheets</p>
     </div>
 
-    <script src="script.js"></script> <!-- ఇది </body> కి పైన ఉండాలి -->
-
+    <!-- Script చివరన ఉండాలి, Body లోపల ఉండాలి -->
+    <script src="script.js"></script>
 </body>
 </html>
-
