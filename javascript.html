@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Course</title>
+
+<style>
+body{
+background:#0f172a;
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+margin:0;
+}
+
+h1{
+background:#111827;
+padding:20px;
+color:#00ffcc;
+margin:0;
+}
+
+.card{
+background:#1e293b;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+button{
+background:#00ffcc;
+color:black;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+font-size:16px;
+margin:8px;
+cursor:pointer;
+}
+
+pre{
+background:#111827;
+color:#00ffcc;
+padding:15px;
+border-radius:8px;
+overflow:auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>⚡ JavaScript Course</h1>
+
+<div class="card">
+
+<h2>Learn JavaScript</h2>
+
+<button onclick="watchVideo()">🎥 Watch JavaScript Video</button>
+
+<button onclick="showAnswer()">📖 Show Notes</button>
+
+<p id="answer"></p>
+
+</div>
+
+<div class="card">
+
+<h2>📝 JavaScript Quiz</h2>
+
+<p>JavaScript is mainly used for?</p>
+
+<input type="radio" name="q1" onclick="wrong()">
+Styling Web Pages
+<br><br>
+
+<input type="radio" name="q1" onclick="correct()">
+Making Web Pages Interactive
+<br><br>
+
+<input type="radio" name="q1" onclick="wrong()">
+Creating Databases
+<br><br>
+
+<p id="result"></p>
+
+</div>
+
+<div class="card">
+
+<h2>💻 Live Demo</h2>
+
+<button onclick="sayHello()">Click Me</button>
+
+<p id="demo"></p>
+
+</div>
+
+<div class="card">
+
+<h2>💻 Example Code</h2>
+
+<pre>
+function greet(){
+   alert("Hello World");
+}
+</pre>
+
+</div>
+
+<div class="card">
+
+<a href="courses.html">
+<button>⬅ Back to Courses</button>
+</a>
+
+</div>
+
+<script>
+
+function watchVideo(){
+window.open("https://www.youtube.com/results?search_query=JavaScript+Full+Course");
+}
+
+function showAnswer(){
+document.getElementById("answer").innerHTML =
+"<b>JavaScript</b> is used to make web pages interactive. It can respond to button clicks, validate forms, create animations and much more.";
+}
+
+function correct(){
+document.getElementById("result").innerHTML =
+"✅ Correct Answer!";
+}
+
+function wrong(){
+document.getElementById("result").innerHTML =
+"❌ Wrong Answer!";
+}
+
+function sayHello(){
+document.getElementById("demo").innerHTML =
+"👋 Hello Vijay! Welcome to JavaScript.";
+}
+
+</script>
+
+</body>
+</html>

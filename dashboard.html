@@ -1,0 +1,149 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+}
+
+.header{
+background:#111827;
+padding:20px;
+text-align:center;
+color:#00ffcc;
+}
+
+.card{
+background:#1e293b;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+input{
+width:95%;
+padding:12px;
+font-size:16px;
+border:none;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+a{
+display:block;
+background:#00ffcc;
+color:black;
+text-decoration:none;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+font-weight:bold;
+text-align:center;
+}
+
+.progress{
+background:#374151;
+height:25px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.bar{
+background:#00ff99;
+width:0%;
+height:25px;
+text-align:center;
+line-height:25px;
+color:black;
+font-weight:bold;
+}
+
+button{
+background:#00ffcc;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1>📚 Vijay Learning Hub Dashboard</h1>
+</div>
+
+<div class="card">
+
+<h2>📖 Courses</h2>
+<input type="text" id="searchBox" placeholder="🔍 Search Course..." onkeyup="searchCourse()">
+
+<a href="html.html" class="course">📘 HTML</a>
+<a href="css.html" class="course">🎨 CSS</a>
+<a href="javascript.html" class="course">⚡ JavaScript</a>
+<a href="os.html" class="course">💻 Operating System</a>
+<a href="dbms.html" class="course">🗄️ DBMS</a>
+<a href="certificate.html" class="course">🏆 View Certificate</a>
+<a href="profile.html" class="course">👤 Student Profile</a>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Learning Progress</h2>
+
+<div class="progress">
+<div class="bar" id="bar">0%</div>
+</div>
+
+<br>
+<button onclick="pragrass()">Click Me</button>
+
+</div>
+
+<script>
+
+let value = 0;
+
+function progress(){
+if(value < 100){
+value += 20;
+document.getElementById("bar").style.width = value + "%";
+document.getElementById("bar").innerHTML = value + "%";
+}
+}
+
+function searchCourse(){
+
+let input = document.getElementById("searchBox").value.toLowerCase();
+
+let courses = document.getElementsByClassName("course");
+
+for(let i=0;i<courses.length;i++){
+
+let text = courses[i].innerText.toLowerCase();
+
+if(text.indexOf(input) > -1){
+courses[i].style.display = "block";
+}else{
+courses[i].style.display = "none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

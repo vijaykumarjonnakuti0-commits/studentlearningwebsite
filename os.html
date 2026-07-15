@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Operating System Course</title>
+
+<style>
+body{
+background:#0f172a;
+color:white;
+font-family:Arial,sans-serif;
+text-align:center;
+margin:0;
+}
+
+h1{
+background:#111827;
+padding:20px;
+color:#00ffcc;
+margin:0;
+}
+
+.card{
+background:#1e293b;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+button{
+background:#00ffcc;
+color:black;
+border:none;
+padding:12px 20px;
+border-radius:8px;
+font-size:16px;
+margin:8px;
+cursor:pointer;
+}
+
+pre{
+background:#111827;
+color:#00ffcc;
+padding:15px;
+border-radius:8px;
+text-align:left;
+overflow:auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>💻 Operating System</h1>
+
+<div class="card">
+
+<h2>Learn Operating System</h2>
+
+<button onclick="watchVideo()">🎥 Watch OS Video</button>
+
+<button onclick="showNotes()">📖 Show Notes</button>
+
+<p id="notes"></p>
+
+</div>
+
+<div class="card">
+
+<h2>📝 Quiz</h2>
+
+<p>What is an Operating System?</p>
+
+<input type="radio" name="q1" onclick="correct()">
+Software that manages computer hardware and software
+<br><br>
+
+<input type="radio" name="q1" onclick="wrong()">
+A web browser
+<br><br>
+
+<input type="radio" name="q1" onclick="wrong()">
+A programming language
+<br><br>
+
+<p id="result"></p>
+
+</div>
+
+<div class="card">
+
+<h2>💡 Example</h2>
+
+<pre>
+Examples of Operating Systems:
+• Windows
+• Linux
+• Android
+• macOS
+</pre>
+
+</div>
+
+<div class="card">
+<a href="courses.html">
+<button>⬅ Back to Courses</button>
+</a>
+</div>
+
+<script>
+
+function watchVideo(){
+window.open("https://www.youtube.com/results?search_query=Operating+System+Full+Course");
+}
+
+function showNotes(){
+document.getElementById("notes").innerHTML =
+"An Operating System (OS) is system software that manages hardware, memory, files, processes and provides an interface between the user and the computer.";
+}
+
+function correct(){
+document.getElementById("result").innerHTML="✅ Correct Answer!";
+}
+
+function wrong(){
+document.getElementById("result").innerHTML="❌ Wrong Answer!";
+}
+
+</script>
+
+</body>
+</html>
