@@ -63,7 +63,8 @@ button, .ans-btn {
     padding: 10px;
     background-color: #e9ecef;
     border-left: 4px solid #007bff;
-    display: none; 
+    display: none; /* ఇది చాలా ముఖ్యం! */
 }
+
 
  
