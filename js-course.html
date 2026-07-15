@@ -1,25 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+<title>JavaScript Course - Vijay Learning Hub</title>
+
+<style>
+body{
+    margin:0;
+    background:#0f172a;
+    color:white;
+    font-family:Arial,sans-serif;
+    padding:20px;
+}
+
+h1{
+    color:#00ffcc;
+    text-align:center;
+}
+
+.box{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+}
+
+h2{
+    color:#00ffcc;
+}
+
+pre{
+    background:#111827;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+}
+
+button{
+    background:#00ffcc;
+    color:black;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+a{
+    color:#00ffcc;
+    text-decoration:none;
+}
+
+iframe{
+    width:100%;
+    max-width:560px;
+    height:315px;
+    border:none;
+    border-radius:10px;
+}
+</style>
+
 </head>
+
 <body>
-    <nav>
-        <a href="js-course.html">Home</a>
-    </nav>
 
-    <h1>JS Script</h1>
-    
-    <h3>వీడియో క్లాస్:</h3>
-    <iframe src="https://youtube.com/watch?v=9qEMbbNGAGI&si=v0TuFJRCGOT_PkkW" frameborder="0" allowfullscreen></iframe>
+<h1>JavaScript Course</h1>
 
-    <h3>క్విజ్:</h3>
-    <div class="quiz-box">
-        <p><b>ప్రశ్న:</b> మీ ప్రశ్న ఇక్కడ రాయండి?</p>
-        <button class="ans-btn" onclick="toggleAnswer('ans1')">సమాధానం చూడండి</button>
-        <p id="ans1" class="ans-text">సమాధానం ఇక్కడ రాయండి.</p>
-    </div>
+<div class="box">
 
-    <script src="script.js"></script>
+<h2>What is JavaScript?</h2>
+
+<p>
+JavaScript is a programming language used to make websites interactive.
+</p>
+
+<h2>Uses of JavaScript</h2>
+
+<ul>
+<li>Create Buttons</li>
+<li>Show Alerts</li>
+<li>Validate Forms</li>
+<li>Create Games</li>
+<li>Build Dynamic Websites</li>
+</ul>
+
+<h2>Example</h2>
+
+<pre>
+alert("Hello World");
+</pre>
+
+<button onclick="showAnswer()">Show JavaScript Meaning</button>
+
+<p id="answer"></p>
+
+<h2>Watch JavaScript Video</h2>
+
+<iframe
+src="https://www.youtube.com/embed/W6NZfCO5SIk"
+allowfullscreen>
+</iframe>
+
+<h2>Quiz</h2>
+
+<p>Q1. JavaScript is a ______?</p>
+
+<button onclick="quizAnswer()">Show Answer</button>
+
+<p id="quiz"></p>
+
+<br><br>
+
+<a href="courses.html">⬅ Back to Courses</a>
+
+</div>
+
+<script>
+function showAnswer(){
+document.getElementById("answer").innerHTML=
+"<b>JavaScript is a Programming Language.</b>";
+}
+
+function quizAnswer(){
+document.getElementById("quiz").innerHTML=
+"✅ Correct Answer: Programming Language";
+}
+</script>
+
 </body>
 </html>
