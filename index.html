@@ -59,6 +59,26 @@ Learn HTML, CSS, JavaScript and build amazing websites.
 <p>All Rights Reserved.</p>
 
 </footer>
+<script>
+function searchPage() {
+  let input = document.getElementById("search").value.toLowerCase();
 
+  if (input === "home") {
+    window.location.href = "index.html";
+  } else if (input === "about") {
+    window.location.href = "about.html";
+  } else if (input === "courses") {
+    window.location.href = "courses.html";
+  } else if (input === "contact") {
+    window.location.href = "contact.html";
+  } else if (input === "blog") {
+    window.location.href = "blog.html";
+  } else if (input === "profile") {
+    window.location.href = "profile.html";
+  } else {
+    alert("Page not found!");
+  }
+}
+  </script>
 </body>
 </html>
