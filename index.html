@@ -262,5 +262,17 @@ counter("visitors", 10000, 1);
     programming skills and improve your knowledge.
   </p>
  </div>
+     <script>
+function searchCourse(){
+ let input=document.getElementById("search").value.toLowerCase();
+ let courses=document.getElementsByClassName("course");
+
+ for(let i=0;i<courses.length;i++){
+   courses[i].style.display =
+   courses[i].innerText.toLowerCase().includes(input)
+   ? "block" : "none";
+ }
+}
+     </script>
 </body>
 </html>
