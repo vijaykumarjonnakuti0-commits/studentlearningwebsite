@@ -163,3 +163,15 @@ margin-bottom:20px;
     flex-direction:column;
     z-index:9999;
 }
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px;
+}
+
+.stats .card{
+    width:180px;
+    text-align:center;
+}
