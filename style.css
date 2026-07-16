@@ -100,3 +100,14 @@ form{
     background:#1e1e1e;
     color:white;
 }
+#topBtn{
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:12px 15px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
