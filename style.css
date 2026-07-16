@@ -111,3 +111,15 @@ form{
     cursor:pointer;
     font-size:18px;
 }
+.hero{
+text-align:center;
+padding:40px 20px;
+}
+
+.profile{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+}
