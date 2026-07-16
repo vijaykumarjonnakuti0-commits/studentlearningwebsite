@@ -191,3 +191,11 @@ margin-bottom:20px;
 .card p{
     color:#333;
 }
+body{
+  background:#0f172a;
+  color:white;
+}
+
+.box, .card{
+  color:white;
+}
