@@ -238,3 +238,11 @@ body{
   color:white;
   text-align:center;
 }
+#search{
+  width:80%;
+  padding:12px;
+  margin:20px auto;
+  display:block;
+  border-radius:10px;
+  font-size:18px;
+}
