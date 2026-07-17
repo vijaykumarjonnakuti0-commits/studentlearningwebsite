@@ -489,3 +489,8 @@ progress{
     margin:20px 0;
     border-radius:10px;
 }
+.signature{
+    width:180px;
+    height:auto;
+    margin-top:20px;
+}
