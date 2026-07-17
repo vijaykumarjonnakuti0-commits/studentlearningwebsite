@@ -283,3 +283,17 @@ footer{
   color:white;
   cursor:pointer;
 }
+#themeBtn{
+  position:fixed;
+  top:15px;
+  right:15px;
+  padding:10px 15px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.light-mode{
+  background:white;
+  color:black;
+}
