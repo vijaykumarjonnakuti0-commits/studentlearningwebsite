@@ -336,3 +336,20 @@ footer{
     object-fit:cover;
     margin-bottom:10px;
 }
+.banner{
+    text-align:center;
+    padding:60px 20px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#2563eb,#06b6d4);
+    color:white;
+    margin:20px;
+}
+
+.start-btn,.contact-btn{
+    padding:12px 24px;
+    margin:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
