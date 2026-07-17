@@ -2,22 +2,93 @@
 <html>
 <head>
 <title>Certificate</title>
+
+<style>
+body{
+    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+.certificate{
+    width:800px;
+    min-height:550px;
+    background:white;
+    margin:40px auto;
+    padding:30px;
+    border:10px solid #333;
+    box-shadow:0 0 15px gray;
+}
+
+h1{
+    font-size:40px;
+}
+
+.name{
+    font-size:32px;
+    font-weight:bold;
+}
+
+.signature{
+    margin-top:40px;
+}
+
+.signature img{
+    width:120px;
+}
+
+input{
+    padding:10px;
+    font-size:16px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+</style>
+
 </head>
-<body style="text-align:center;font-family:Arial;">
+
+<body>
+
+<div class="certificate">
 
 <h1>🏆 Certificate of Completion</h1>
 
 <h2>This Certificate is Awarded to</h2>
 
-<h1>Vijay Babu</h1>
+<h1 class="name" id="studentName">Student Name</h1>
 
-<p>For Successfully Completing the HTML Course</p>
+<p>For Successfully Completing the</p>
+
+<h2>HTML Course</h2>
 
 <p>Issued by <b>Learn With Vijay</b></p>
 
-<button onclick="window.print()">🖨️ Download Certificate</button>
+<h3>Certificate ID: LWV-2026-0001</h3>
 
-<h2>This Certificate is Presented to</h2>
+<p>Status: ✅ Verified</p>
+
+
+<div class="signature">
+
+<p>Authorized By</p>
+
+<img src="images/signature.png">
+
+<p><b>Vijay Babu</b></p>
+
+<p>Founder, Learn With Vijay</p>
+
+</div>
+
+</div>
+
+
+<h3>This Certificate is Presented to</h3>
 
 <input type="text" id="name" placeholder="Enter Your Name">
 
@@ -25,26 +96,23 @@
 
 <button onclick="showCertificate()">Generate Certificate</button>
 
-<h2 id="studentName"></h2>
-<h3>Certificate ID: LWV-2026-0001</h3>
-<p>Status: ✅ Verified</p>
+<br><br>
+
+<button onclick="window.print()">🖨️ Download / Print Certificate</button>
+
+
 <script>
+
 function showCertificate(){
-  let name = document.getElementById("name").value;
-  document.getElementById("studentName").innerHTML = name;
+
+let name = document.getElementById("name").value;
+
+document.getElementById("studentName").innerHTML = name;
+
 }
-  <p>Authorized By</p>
 
-<img src="signature.png" alt="Vijay Babu Signature" class="20260717_124840.png
-    7">
-
-<p><b>Vijay Babu</b></p>
-<p>Founder, Learn With Vijay</p>
 </script>
-<div class="signature">
-  <img src="images/signature.png" width="120">
-  <p>Vijay Babu</p>
-  <p>Authorized Signature</p>
-</div>
+
+
 </body>
 </html>
