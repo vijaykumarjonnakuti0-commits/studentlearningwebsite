@@ -74,6 +74,21 @@ Designed & Developed by
   <a href="contact.html">
     <button class="contact-btn">📞 Contact Us</button>
   </a>
+      <button onclick="shareWebsite()">📤 Share Website</button>
+
+<script>
+function shareWebsite(){
+  if(navigator.share){
+    navigator.share({
+      title:"Learn With Vijay",
+      text:"Learn coding for free!",
+      url:window.location.href
+    });
+  }else{
+    alert("Sharing is not supported on this device.");
+  }
+}
+</script>
    </section>
 
 <nav>
