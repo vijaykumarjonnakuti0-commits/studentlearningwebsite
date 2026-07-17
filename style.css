@@ -431,3 +431,49 @@ summary{
     margin:20px;
     border-radius:15px;
 }
+/* Mobile Responsive */
+@media screen and (max-width:768px){
+
+nav{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+
+.card{
+    width:90%;
+    margin:15px auto;
+}
+
+.course{
+    width:95%;
+    margin:15px auto;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+}
+
+h1{
+    font-size:28px;
+}
+
+h2{
+    font-size:22px;
+}
+
+p{
+    font-size:16px;
+}
+
+input{
+    width:95%;
+}
+}
