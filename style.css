@@ -254,3 +254,32 @@ footer{
   color:white;
   border-radius:10px;
 }
+.hero{
+  text-align:center;
+  padding:40px 20px;
+}
+
+.hero h1{
+  font-size:42px;
+  color:#00e5ff;
+}
+
+.hero h2{
+  font-size:28px;
+  color:white;
+}
+
+.hero p{
+  font-size:18px;
+  color:#cbd5e1;
+}
+
+.start-btn{
+  padding:15px 30px;
+  font-size:18px;
+  border:none;
+  border-radius:10px;
+  background:#22c55e;
+  color:white;
+  cursor:pointer;
+}
