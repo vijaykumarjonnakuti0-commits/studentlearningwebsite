@@ -366,3 +366,24 @@ footer{
     border-radius:15px;
     max-width:600px;
 }
+.faq{
+    width:90%;
+    margin:30px auto;
+    color:white;
+}
+
+.faq h2{
+    text-align:center;
+}
+
+details{
+    background:#1e293b;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+}
