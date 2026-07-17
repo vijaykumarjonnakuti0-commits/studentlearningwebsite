@@ -179,6 +179,27 @@ Learn HTML, CSS, JavaScript and build amazing websites.
     <p>Use the Contact page or email us.</p>
   </details>
    </section>
+   <section class="newsletter">
+  <h2>📩 Subscribe for Updates</h2>
+  <p>Get updates about new courses and tutorials.</p>
+
+  <input type="email" id="email" placeholder="Enter your email">
+  <button onclick="subscribe()">Subscribe</button>
+
+  <p id="message"></p>
+</section>
+
+<script>
+function subscribe(){
+  let email = document.getElementById("email").value;
+
+  if(email==""){
+    document.getElementById("message").innerHTML="❌ Please enter your email.";
+  }else{
+    document.getElementById("message").innerHTML="✅ Thank you for subscribing!";
+  }
+}
+</script>
 
 <footer>
 
