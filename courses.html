@@ -170,6 +170,28 @@
 <p>© 2026 VjBabu.in</p>
 <p>Designed & Developed by <b>Vijay Babu</b> ❤️</p>
 </footer>
+<h2>📈 Course Progress</h2>
 
+<progress id="progressBar" value="0" max="100"></progress>
+<p id="progressText">0% Completed</p>
+
+<button onclick="increaseProgress()">Complete Next Lesson</button>
+
+<script>
+let progress = 0;
+
+function increaseProgress(){
+  if(progress < 100){
+    progress += 10;
+    document.getElementById("progressBar").value = progress;
+    document.getElementById("progressText").innerHTML =
+      progress + "% Completed";
+
+    if(progress == 100){
+      alert("🎉 Congratulations! Course Completed.");
+    }
+  }
+}
+</script>
 </body>
 </html>
