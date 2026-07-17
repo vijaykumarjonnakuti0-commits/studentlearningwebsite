@@ -424,3 +424,10 @@ summary{
         transform:translateY(0);
     }
 }
+.card{
+    background:#1e293b;
+    color:white;
+    padding:20px;
+    margin:20px;
+    border-radius:15px;
+}
