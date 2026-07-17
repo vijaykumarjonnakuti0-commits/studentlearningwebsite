@@ -160,6 +160,28 @@ Learn HTML, CSS, JavaScript and build amazing websites.
   </ul>
 </div>
    </section>
+   <h2>📝 Quick Quiz</h2>
+
+<p>1. HTML stands for?</p>
+
+<input type="radio" name="q1" value="a"> Hyper Text Markup Language<br>
+<input type="radio" name="q1" value="b"> High Text Machine Language<br><br>
+
+<button onclick="checkQuiz()">Submit</button>
+
+<p id="quizResult"></p>
+
+<script>
+function checkQuiz(){
+  let answer = document.querySelector('input[name="q1"]:checked');
+
+  if(answer && answer.value=="a"){
+    document.getElementById("quizResult").innerHTML="✅ Correct Answer!";
+  }else{
+    document.getElementById("quizResult").innerHTML="❌ Wrong Answer. Try Again!";
+  }
+}
+</script>
 <section>
   
 </section>
